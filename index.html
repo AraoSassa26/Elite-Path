@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elite Path - Conectando Você ao Futuro. Empresa digital especializada em tecnologia e empreendedorismo em Angola.">
+    <title>Elite Path – Conectando Você ao Futuro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --text-color: #333;
+            --light-bg: #f8f9fa;
+            --spacing: 2rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing);
+        }
+
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: var(--spacing) 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--primary-color);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Section Styles */
+        section {
+            padding: var(--spacing) 0;
+        }
+
+        section:nth-child(even) {
+            background-color: var(--light-bg);
+        }
+
+        h2 {
+            color: var(--primary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: var(--secondary-color);
+            margin: 1.5rem 0 1rem;
+        }
+
+        /* Team Grid */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .team-member {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Contact Section */
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+
+        .contact-info i {
+            color: var(--secondary-color);
+            margin-right: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--primary-color);
+            color: white;
+            padding: var(--spacing) 0;
+            text-align: center;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                text-align: center;
+                gap: 1rem;
+            }
+
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .team-grid, .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Elite Path</h1>
+            <p>Conectando Você ao Futuro</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#quem-somos">Quem Somos</a></li>
+                <li><a href="#equipe">Nossa Equipe</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="quem-somos">
+        <div class="container">
+            <h2>Quem Somos</h2>
+            <p>A <strong>Elite Path</strong> é uma empresa digital inovadora, fundada com o propósito de transformar o mercado angolano por meio da tecnologia, empreendedorismo e estratégias inteligentes de vendas.</p>
+            <p><strong>Nosso lema é "Fé, Foco e Determinação"</strong>, pois acreditamos que o sucesso vem da combinação de visão, trabalho árduo e persistência.</p>
+        </div>
+    </section>
+
+    <section id="equipe">
+        <div class="container">
+            <h2>Nossa Equipe</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Scal Christopher</h3>
+                    <p><strong>CEO e CFO</strong></p>
+                    <p>Liderança estratégica e gestão financeira</p>
+                </div>
+                <div class="team-member">
+                    <h3>Diaquizai Dialowa</h3>
+                    <p><strong>COO e CMO</strong></p>
+                    <p>Operações e estratégias de marketing</p>
+                </div>
+                <!-- Outros membros da equipe -->
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-bullhorn"></i> Marketing Digital</h3>
+                    <ul>
+                        <li>Gestão de Redes Sociais</li>
+                        <li>Tráfego Pago</li>
+                        <li>Criação de Conteúdo</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-laptop-code"></i> Tecnologia</h3>
+                    <ul>
+                        <li>Desenvolvimento Web</li>
+                        <li>Automação</li>
+                        <li>Inteligência Artificial</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-chart-line"></i> Consultoria</h3>
+                    <ul>
+                        <li>Estratégia Empresarial</li>
+                        <li>Mentoria</li>
+                        <li>Treinamentos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="produtos">
+        <div class="container">
+            <h2>Produtos</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3><i class="fas fa-mobile-alt"></i> Smartphones</h3>
+                    <ul>
+                        <li>iPhones</li>
+                        <li>Samsung</li>
+                        <li>Xiaomi</li>
+                    </ul>
+                </div>
+                <div class="service-card">
+                    <h3><i class="fas fa-headphones"></i> Acessórios</h3>
+                    <ul>
+                        <li>Fones de Ouvido</li>
+                        <li>Carregadores</li>
+                        <li>Capas</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <div class="container">
+            <h2>Contato</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> (938562168 / 928047299)</p>
+                <p><i class="fas fa-envelope"></i> tchissanhaantonio@gmail.com</p>
+                <p><i class="fas fa-globe"></i> Atendimento 100% online</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Elite Path - Todos os Direitos Reservados</p>
+            <p> Site Desenvolvido pela Sassa Corporation</p>
+        </div>
+    </footer>
+</body>
+</html>
